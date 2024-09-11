@@ -278,21 +278,12 @@ footer p {
         background: rgba(0, 0, 0, 0.9); /* Darker background on scroll */
     }
 
-    /* Shorter and more compact navigation bar for mobile */
+    /* Hide navigation bar menu on mobile */
     nav ul {
-        flex-direction: column;
-        padding: 5px 0;
+        display: none; /* Hide the navigation on small screens */
     }
 
-    nav ul li {
-        margin: 5px 0;
-    }
-
-    nav ul li a {
-        font-size: 14px; /* Smaller font size for mobile links */
-        padding: 4px 8px; /* Shorter padding for compact look */
-    }
-
+    /* Adjustments for About Me section on mobile */
     #about p {
         font-size: 80%;
         line-height: 1.7;
@@ -311,21 +302,21 @@ footer p {
         max-width: 800px; /* Restrict the width for better readability */
     }
 
-    #contact label{
-
+    #contact label {
         font-size: 90%;
     }
-    
-    #contact input{
+
+    #contact input {
         height: 30%;
     }
 
-    #home h1{
+    #home h1 {
         font-size: 100%;
     }
 
-    #home p{
+    #home p {
         font-size: 90%;
+        width: 95%;
     }
 
     h1 {
@@ -379,3 +370,4 @@ footer p {
         padding: 8px 15px;
     }
 }
+
