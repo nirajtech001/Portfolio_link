@@ -97,6 +97,30 @@ nav ul li a:hover {
     transition: padding 0.3s ease;
 }
 
+/* Keyframes for fade-in animation */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Home Section Styles */
 #home {
     background: linear-gradient(135deg, #1e3c72, #2a5298);
     color: #fff;
@@ -106,23 +130,31 @@ nav ul li a:hover {
     flex-direction: column;
     padding-top: 200px;
     padding-bottom: 200px;
+    text-align: center;
 }
 
 #home h1 {
     font-size: 4rem;
     margin-bottom: 20px;
-    animation: fadeInDown 1s ease-in-out;
+    animation: fadeInDown 1s ease-in-out; /* Fades in from the top */
     letter-spacing: 2px;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    opacity: 0; /* Initially hidden */
+    animation-delay: 0.5s; /* Delay to ensure smoother entry */
+    animation-fill-mode: forwards; /* Keeps the final state after animation ends */
 }
 
 #home p {
     font-size: 1.3rem;
     max-width: 600px;
     margin: 0 auto;
-    animation: fadeInUp 1s ease-in-out;
+    animation: fadeInUp 1.2s ease-in-out; /* Fades in from the bottom */
     color: #ddd;
+    opacity: 0; /* Initially hidden */
+    animation-delay: 1s; /* Delay for a smooth transition after the heading */
+    animation-fill-mode: forwards; /* Keeps the final state after animation ends */
 }
+
 
 #about, #projects, #contact {
     background-color: #fff;
