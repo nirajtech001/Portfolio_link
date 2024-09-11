@@ -6,6 +6,8 @@
     scroll-behavior: smooth;
 }
 
+
+
 body {
     font-family: 'Poppins', sans-serif;
     background-color: #f4f4f4;
@@ -287,7 +289,8 @@ footer p {
     /* Minimized header on mobile */
     header {
         padding: 5px 0;
-        transition: padding 0.3s ease;
+        z-index: 1000; /* Ensure the header has a high z-index */
+        
     }
 
     header.scrolled {
