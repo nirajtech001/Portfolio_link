@@ -319,7 +319,7 @@ footer p {
     #about p {
         font-size: 80%;
         line-height: 1.7;
-        text-align: center;
+        text-align: justify;
         padding: 20px 20px; /* Added padding for better spacing */
         margin: 20px auto; /* Center-align with margin */
         max-width: 800px; /* Restrict the width for better readability */
