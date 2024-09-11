@@ -308,6 +308,7 @@ footer p {
 
     nav ul li {
         margin: 0 3px; /* Adjust margin for spacing */
+        padding: 8px;
     }
 
     nav ul li a {
@@ -395,6 +396,7 @@ footer p {
     nav ul {
         justify-content: center;
         padding: 15px 0;
+        
     }
 
     nav ul li a {
