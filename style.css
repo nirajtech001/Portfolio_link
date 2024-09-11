@@ -289,7 +289,7 @@ footer p {
     /* Minimized header on mobile */
     header {
         padding: 5px 0;
-        z-index: 1000; /* Ensure the header has a high z-index */
+            z-index: 1000; /* Ensure the header has a high z-index */
         
     }
 
@@ -308,8 +308,6 @@ footer p {
 
     nav ul li {
         margin: 0 3px; /* Adjust margin for spacing */
-      
-        
     }
 
     nav ul li a {
@@ -397,7 +395,6 @@ footer p {
     nav ul {
         justify-content: center;
         padding: 15px 0;
-        
     }
 
     nav ul li a {
