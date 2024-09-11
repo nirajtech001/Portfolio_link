@@ -253,19 +253,36 @@ button:hover {
 }
 
 
+.footer-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px 0;
+}
+
+.footer-icons a {
+    color: #fff;
+    font-size: 24px;
+    transition: color 0.3s ease;
+}
+
+.footer-icons a:hover {
+    color: #ffdd57;
+}
+
 footer {
     background-color: #333;
     color: #fff;
     text-align: center;
-    padding: 30px 0;
-    margin-top: 60px;
+    padding: 20px 0;
+    margin-top: 40px;
 }
+
 
 footer p {
     font-size: 0.9rem;
 }
 
-/* General adjustments for phone screens */
 @media (max-width: 768px) {
     /* Minimized header on mobile */
     header {
@@ -278,9 +295,21 @@ footer p {
         background: rgba(0, 0, 0, 0.9); /* Darker background on scroll */
     }
 
-    /* Hide navigation bar menu on mobile */
+    /* Display navigation as horizontal on mobile screens */
     nav ul {
-        display: none; /* Hide the navigation on small screens */
+        display: flex;
+        flex-direction: row; /* Arrange items in a row */
+        justify-content: center;
+        padding: 3px 0;
+    }
+
+    nav ul li {
+        margin: 0 3px; /* Adjust margin for spacing */
+    }
+
+    nav ul li a {
+        font-size: 10px; /* Adjust font size for mobile screens */
+        padding: 3px 5px; /* Adjust padding for mobile screens */
     }
 
     /* Adjustments for About Me section on mobile */
@@ -348,7 +377,6 @@ footer p {
         font-size: 0.7rem;
     }
 }
-
 /* Padding and margin for About Me section on desktop */
 @media (min-width: 769px) {
     #about p {
