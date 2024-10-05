@@ -287,8 +287,16 @@ button:hover {
     margin: 0 auto; /* Centers the paragraph horizontally */
    
     font-size: 1.1em;
+    
 }
 
+.p1 {
+    width: 70%;
+    margin: 0 auto; /* Centers the paragraph horizontally */
+   text-align: justify;
+    font-size: 1.1em;
+    
+}
 
 .footer-icons {
     display: flex;
