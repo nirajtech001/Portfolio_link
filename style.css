@@ -155,10 +155,89 @@ nav ul li a:hover {
     animation-fill-mode: forwards; /* Keeps the final state after animation ends */
 }
 
+/* Skills Container - Horizontal Layout */
+.skills-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 20px;
+    flex-wrap: wrap; /* Ensures it wraps on smaller screens */
+    padding: auto;
+}
+
+#w{
+    font-size: 160%;
+}
+
+.skill {
+    flex: 1 1 22%; /* Each skill takes up about 22% of the container, adjusts with screen size */
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    height: 250px;
+    max-width: 300px; /* Restricting the max-width for better appearance */
+    min-width: 300px;
+   
+}
+
+#skills{
+    min-height: 50vh;
+
+}
+
+.skill:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.skill i {
+    font-size: 2.5rem;
+    color: #007BFF;
+    margin-bottom: 10px;
+}
+
+.skill h3 {
+    margin-top: 10px;
+}
+
+.skill p {
+    font-size: 1rem;
+    color: #666;
+    margin-top: 10px;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .skills-container {
+        flex-direction: row; /* Keep skills in a row for tablet screens */
+        justify-content: space-around; /* Space out the skills evenly */
+    }
+
+    .skill {
+        flex: 1 1 auto; /* Allow skills to grow and shrink */
+        max-width: 30%; /* Adjust the max-width as needed for the layout */
+    }
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 300px) {
+    .skills-container {
+        flex-direction: column; /* Stack skills vertically on smaller screens */
+        align-items: center;
+    }
+
+    .skill {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+}
 
 
 #about, #projects, #contact {
-    background-color: #fff;
+    background-color: #ffffff;
     padding: 60px 20px;
     color: #444;
     position: relative;
@@ -190,6 +269,12 @@ h2::after {
 #about p{
     text-align: center;
     font-size: 110%;
+    
+
+}
+
+#about{
+    min-height: 50vh;
 }
 
 .project {
@@ -203,6 +288,8 @@ h2::after {
     position: relative;
     z-index: 1;
 }
+
+
 
 .project:hover {
     transform: translateY(-15px);
