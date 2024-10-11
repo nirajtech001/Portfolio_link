@@ -289,6 +289,11 @@ h2::after {
     z-index: 1;
 }
 
+.p1{
+    text-align: justify;
+    max-width: 64%;
+}
+
 
 
 .project:hover {
