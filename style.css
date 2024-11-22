@@ -387,7 +387,7 @@ button:hover {
         display: none; /* Hides the paragraph on smaller screens */
     }
     .publication {
-        min-height: 40vh;
+        min-height: 20vh;
     }
 }
 
