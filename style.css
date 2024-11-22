@@ -386,9 +386,13 @@ button:hover {
     .publication p {
         display: none; /* Hides the paragraph on smaller screens */
     }
+
     #publications {
-        min-height: 20vh;
+        min-height: auto; /* Remove min-height for publications section on mobile */
+        padding: 50px 10px; /* Adjust padding for mobile */
     }
+
+   
 }
 
 
