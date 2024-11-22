@@ -377,9 +377,14 @@ button:hover {
 .publication p {
     width: 70%;
     margin: 0 auto; /* Centers the paragraph horizontally */
-   
     font-size: 1.1em;
-    
+}
+
+/* Hide the paragraph on phone screens */
+@media (max-width: 600px) {
+    .publication p {
+        display: none; /* Hides the paragraph on smaller screens */
+    }
 }
 
 
