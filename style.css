@@ -386,7 +386,7 @@ button:hover {
     .publication p {
         display: none; /* Hides the paragraph on smaller screens */
     }
-    .publication {
+    #publications {
         min-height: 20vh;
     }
 }
